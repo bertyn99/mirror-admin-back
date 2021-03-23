@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandes",
+  "info": {
+    "name": "Commande"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Rendez_vous": {
+      "type": "date",
+      "required": true
+    },
+    "Prix_Total": {
+      "type": "decimal",
+      "required": true
+    },
+    "user_commandes": {
+      "via": "commandes",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

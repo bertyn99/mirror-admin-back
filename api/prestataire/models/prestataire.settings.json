@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestataires",
+  "info": {
+    "name": "Prestataire",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Numero_de_Siret": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "Addresse": {
+      "type": "string",
+      "required": false
+    },
+    "Code_Postal": {
+      "type": "biginteger"
+    },
+    "Tel": {
+      "type": "string"
+    },
+    "users_permissions_presta": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "prestations": {
+      "collection": "prestation",
+      "via": "prestataire"
+    }
+  }
+}

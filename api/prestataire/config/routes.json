@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prestataires",
+      "handler": "prestataire.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestataires/count",
+      "handler": "prestataire.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestataires/:id",
+      "handler": "prestataire.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestataires",
+      "handler": "prestataire.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prestataires/:id",
+      "handler": "prestataire.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prestataires/:id",
+      "handler": "prestataire.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

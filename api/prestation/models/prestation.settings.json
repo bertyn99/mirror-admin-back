@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestations",
+  "info": {
+    "name": "Prestation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Prix": {
+      "type": "decimal"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "categories": {
+      "via": "prestations",
+      "collection": "category"
+    },
+    "prestataire": {
+      "via": "prestations",
+      "model": "prestataire"
+    }
+  }
+}

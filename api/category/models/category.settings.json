@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "prestations": {
+      "collection": "prestation",
+      "via": "categories",
+      "dominant": true
+    }
+  }
+}
