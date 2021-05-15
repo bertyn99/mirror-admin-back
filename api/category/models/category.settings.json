@@ -15,8 +15,8 @@
       "type": "string"
     },
     "prestations": {
-      "collection": "prestation",
       "via": "categories",
+      "collection": "prestation",
       "dominant": true
     }
   }

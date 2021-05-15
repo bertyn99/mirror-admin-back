@@ -553,6 +553,9 @@
                 "prestataire": {
                   "type": "string"
                 },
+                "img": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
