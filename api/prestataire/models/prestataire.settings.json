@@ -35,8 +35,19 @@
       "model": "user"
     },
     "prestations": {
-      "collection": "prestation",
-      "via": "prestataire"
+      "via": "prestataire",
+      "collection": "prestation"
+    },
+    "img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
