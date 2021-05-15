@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "commandes",
   "info": {
-    "name": "Commande"
+    "name": "Commande",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -19,9 +20,15 @@
       "required": true
     },
     "user_commandes": {
-      "via": "commandes",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "commandes"
+    },
+    "prestations": {
+      "type": "json"
+    },
+    "prestataire": {
+      "model": "prestataire"
     }
   }
 }

@@ -602,6 +602,53 @@
                 "type": "string"
               }
             }
+          },
+          "prestations": {
+            "type": "object"
+          },
+          "prestataire": {
+            "required": [
+              "id",
+              "Nom"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Nom": {
+                "type": "string"
+              },
+              "Numero_de_Siret": {
+                "type": "string"
+              },
+              "Addresse": {
+                "type": "string"
+              },
+              "Code_Postal": {
+                "type": "integer"
+              },
+              "Tel": {
+                "type": "string"
+              },
+              "users_permissions_presta": {
+                "type": "string"
+              },
+              "prestations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "img": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -619,6 +666,12 @@
             "type": "number"
           },
           "user_commandes": {
+            "type": "string"
+          },
+          "prestations": {
+            "type": "object"
+          },
+          "prestataire": {
             "type": "string"
           },
           "created_by": {
