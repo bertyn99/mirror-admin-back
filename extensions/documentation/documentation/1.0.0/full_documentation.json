@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/01/2021 12:03:29 AM"
+    "x-generation-date": "05/15/2021 2:31:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4357,6 +4357,9 @@
                 "prestataire": {
                   "type": "string"
                 },
+                "img": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4478,6 +4481,53 @@
                 "type": "string"
               }
             }
+          },
+          "prestations": {
+            "type": "object"
+          },
+          "prestataire": {
+            "required": [
+              "id",
+              "Nom"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Nom": {
+                "type": "string"
+              },
+              "Numero_de_Siret": {
+                "type": "string"
+              },
+              "Addresse": {
+                "type": "string"
+              },
+              "Code_Postal": {
+                "type": "integer"
+              },
+              "Tel": {
+                "type": "string"
+              },
+              "users_permissions_presta": {
+                "type": "string"
+              },
+              "prestations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "img": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -4495,6 +4545,12 @@
             "type": "number"
           },
           "user_commandes": {
+            "type": "string"
+          },
+          "prestations": {
+            "type": "object"
+          },
+          "prestataire": {
             "type": "string"
           },
           "created_by": {
@@ -4629,6 +4685,9 @@
                 "prestataire": {
                   "type": "string"
                 },
+                "img": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -4638,6 +4697,73 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "img": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -4757,6 +4883,76 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "img": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "img": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -5086,6 +5282,12 @@
                   "type": "number"
                 },
                 "user_commandes": {
+                  "type": "string"
+                },
+                "prestations": {
+                  "type": "object"
+                },
+                "prestataire": {
                   "type": "string"
                 },
                 "created_by": {

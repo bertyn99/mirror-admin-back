@@ -1296,6 +1296,12 @@
                 "user_commandes": {
                   "type": "string"
                 },
+                "prestations": {
+                  "type": "object"
+                },
+                "prestataire": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

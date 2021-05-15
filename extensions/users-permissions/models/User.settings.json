@@ -84,8 +84,8 @@
       "required": false
     },
     "commandes": {
-      "collection": "commande",
-      "via": "user_commandes"
+      "via": "user_commandes",
+      "collection": "commande"
     }
   }
 }
